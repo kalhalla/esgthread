@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>ESG Thread — Weaving ESG into the fabric of your business</title>
+<meta name="description" content="ESG Thread guides start-ups and SMEs to enhance their Environmental, Social and Governance performance.">
+<link rel="canonical" href="https://esgthread.com/">
+<meta name="robots" content="max-image-preview:large">
+<meta property="og:title" content="ESG Thread — Weaving ESG into the fabric of your business">
+<meta property="og:description" content="Guiding start-ups and SMEs to enhance their ESG performance.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://esgthread.com/">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ProfessionalService","name":"ESG Thread","url":"https://esgthread.com/","description":"ESG consultancy for start-ups and SMEs: carbon accounting, net zero target setting, supplier management, ESG policies, reporting and training.","areaServed":"GB","slogan":"Weaving ESG into the fabric of your business"}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    color-scheme: light;
+    --paper:#f1f4ef; --paper-2:#e8ece4; --ink:#0f211b; --green:#1f463a; --green-700:#2b5a4b;
+    --sage:#7c9183; --thread:#bd7b3c; --thread-soft:#dca767; --line:#d4dacf; --text:#233029; --muted:#5d6b62;
+    --display:"Fraunces",Georgia,serif; --body:"Inter",system-ui,sans-serif;
+    --maxw:1080px; --gutter:clamp(1.25rem,5vw,3rem); --r:14px;
+  }
+  *,*::before,*::after{box-sizing:border-box}
+  @media (prefers-reduced-motion:reduce){*{animation-duration:.001ms!important;transition-duration:.001ms!important}}
+  html{background:var(--paper)}
+  body{margin:0;font-family:var(--body);color:var(--text);background:var(--paper);line-height:1.6;-webkit-font-smoothing:antialiased}
+  main{background:var(--paper)}
+  h1,h2,h3{font-family:var(--display);font-weight:500;line-height:1.12;color:var(--ink);margin:0 0 .5em;letter-spacing:-.01em}
+  h2{font-size:clamp(1.55rem,3.4vw,2.25rem)} h3{font-size:1.15rem;font-weight:600;font-family:var(--body)}
+  p{margin:0 0 1.1em} a{color:var(--green-700);text-underline-offset:3px} a:hover{color:var(--thread)}
+  .wrap{max-width:var(--maxw);margin-inline:auto;padding-inline:var(--gutter)}
+  .skip{position:absolute;left:-999px;top:0;background:var(--ink);color:#fff;padding:.6rem 1rem;z-index:100}
+  .skip:focus{left:.5rem;top:.5rem}
+  :focus-visible{outline:2.5px solid var(--thread);outline-offset:3px;border-radius:4px}
+  .eyebrow{font-family:var(--body);font-size:.78rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--thread);margin:0 0 1rem;display:inline-flex;align-items:center;gap:.55rem}
+  .eyebrow::before{content:"";width:26px;height:1px;background:currentColor;opacity:.7}
+
+  /* header */
+  .site-head{position:absolute;top:0;left:0;right:0;z-index:20}
+  .site-head .wrap{display:flex;align-items:center;justify-content:space-between;min-height:72px;gap:1rem}
+  .brand{display:inline-flex;align-items:center;gap:.6rem;font-family:var(--display);font-size:1.32rem;font-weight:500;color:#fff;text-decoration:none}
+  .brand-mark{width:26px;height:26px;flex:none;color:var(--thread)}
+  nav.main ul{display:flex;gap:clamp(1rem,3vw,2rem);list-style:none;margin:0;padding:0}
+  nav.main a{font-size:.95rem;font-weight:500;color:#e7ede8;text-decoration:none;padding:.4rem 0;border-bottom:2px solid transparent}
+  nav.main a:hover,nav.main a[aria-current="page"]{color:#fff;border-color:var(--thread)}
+  .nav-toggle{display:none;background:none;border:1px solid rgba(255,255,255,.4);border-radius:8px;padding:.45rem .6rem;cursor:pointer;color:#fff}
+  @media (max-width:720px){
+    .nav-toggle{display:inline-flex}
+    nav.main{position:absolute;inset:72px 0 auto 0;background:var(--green);transform:translateY(-130%);transition:transform .25s ease}
+    nav.main[data-open="true"]{transform:translateY(0);box-shadow:0 18px 40px -28px #000}
+    nav.main ul{flex-direction:column;gap:0;padding:.5rem var(--gutter) 1rem}
+    nav.main a{display:block;padding:.8rem 0;border-bottom:1px solid rgba(255,255,255,.14);color:#fff}
+  }
+
+  /* hero */
+  .hero{position:relative;min-height:100svh;display:flex;align-items:center;overflow:hidden;
+        background:radial-gradient(120% 90% at 75% 12%,#1d3f33 0%,#142a22 45%,#0d1c17 100%)}
+  #scene{position:absolute;inset:0;width:100%;height:100%;display:block}
+  .hero-scrim{position:absolute;inset:0;z-index:5;pointer-events:none;
+    background:linear-gradient(90deg,rgba(11,24,19,.82) 0%,rgba(11,24,19,.45) 34%,rgba(11,24,19,0) 60%),
+               linear-gradient(0deg,rgba(11,24,19,.55) 0%,rgba(11,24,19,0) 40%)}
+  .hero-inner{position:relative;z-index:10;color:#eef2ec;padding-block:clamp(7rem,16vh,11rem) 4rem}
+  .hero h1{color:#fff;font-size:clamp(2.3rem,5.6vw,4rem);max-width:15ch;font-optical-sizing:auto}
+  .hero .lede{font-size:clamp(1.05rem,2vw,1.3rem);color:#d4ddd5;max-width:46ch;margin-top:1.2rem}
+  .btn-row{margin-top:2rem;display:flex;flex-wrap:wrap;gap:.8rem}
+  .btn{display:inline-flex;align-items:center;gap:.5rem;font-weight:600;font-size:.98rem;padding:.8rem 1.4rem;border-radius:999px;text-decoration:none;border:1.5px solid transparent;cursor:pointer;transition:transform .15s ease,background .15s ease,color .15s ease}
+  .btn:hover{transform:translateY(-1px)}
+  .btn-primary{background:var(--thread);color:#20140a}.btn-primary:hover{background:var(--thread-soft)}
+  .btn-ghost{border-color:rgba(255,255,255,.45);color:#fff}.btn-ghost:hover{border-color:var(--thread-soft);color:var(--thread-soft)}
+  .scroll-cue{position:absolute;left:50%;bottom:1.6rem;transform:translateX(-50%);z-index:10;color:#cdd8ce;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;display:flex;flex-direction:column;align-items:center;gap:.5rem;opacity:.8}
+  .scroll-cue span{width:1px;height:34px;background:linear-gradient(#dca767,transparent);animation:cue 2.4s ease-in-out infinite}
+  @keyframes cue{0%,100%{opacity:.3;transform:scaleY(.6)}50%{opacity:1;transform:scaleY(1)}}
+  @media (prefers-reduced-motion:reduce){.scroll-cue span{animation:none}}
+
+  /* sections below */
+  section.block{padding-block:clamp(3rem,7vw,5rem)}
+  .split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,4rem);align-items:center}
+  @media (max-width:800px){.split{grid-template-columns:1fr}}
+  .prose{max-width:64ch}.prose p{color:var(--text)}
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.1rem}
+  @media (max-width:860px){.grid{grid-template-columns:repeat(2,1fr)}}
+  @media (max-width:540px){.grid{grid-template-columns:1fr}}
+  .card{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:1.5rem 1.4rem;transition:border-color .2s,transform .2s,box-shadow .2s}
+  .card:hover{border-color:var(--thread);transform:translateY(-2px);box-shadow:0 16px 30px -24px rgba(31,70,58,.6)}
+  .card .num{font-family:var(--display);font-size:.85rem;color:var(--thread);display:block;margin-bottom:.8rem}
+  .card p{font-size:.96rem;color:var(--muted);margin:0}
+  .cta-band{background:var(--ink);color:#eef2ec;border-radius:var(--r);padding:clamp(2rem,5vw,3.2rem);text-align:center}
+  .cta-band h2{color:#fff}.cta-band p{color:#c6d0c8;max-width:48ch;margin-inline:auto}
+  .stitch{height:14px;color:var(--thread)}.stitch svg{display:block;width:100%;height:14px}
+  .site-foot{background:var(--ink);color:#c6d0c8}
+  .site-foot .wrap{padding-block:2.6rem;display:flex;flex-wrap:wrap;gap:1.4rem 2rem;justify-content:space-between;align-items:center}
+  .site-foot .brand{color:#fff}
+  .site-foot nav ul{display:flex;flex-wrap:wrap;gap:1.2rem;list-style:none;margin:0;padding:0}
+  .site-foot a{color:#c6d0c8;text-decoration:none;font-size:.92rem}.site-foot a:hover{color:var(--thread-soft)}
+  .foot-legal{width:100%;border-top:1px solid rgba(255,255,255,.12);padding-top:1.2rem;font-size:.82rem;color:#8fa096;display:flex;justify-content:space-between;flex-wrap:wrap;gap:.6rem}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/">
+      <svg class="brand-mark" viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M4 9c5 4 19 4 24 0M4 16c5 4 19 4 24 0M4 23c5 4 19 4 24 0" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="16" cy="16" r="2.4" fill="currentColor"/></svg>
+      ESG&nbsp;Thread
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav class="main" id="nav" aria-label="Primary">
+      <ul>
+        <li><a href="/" aria-current="page">Home</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/services/">Services</a></li>
+        <li><a href="/insights/">Insights</a></li>
+        <li><a href="/contact/">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero">
+    <canvas id="scene" aria-hidden="true"></canvas>
+    <div class="hero-scrim"></div>
+    <div class="wrap hero-inner">
+      <p class="eyebrow">ESG for start-ups &amp; SMEs</p>
+      <h1>Weaving ESG into the fabric of your business</h1>
+      <p class="lede">Guiding companies to enhance their Environmental, Social and Governance performance — practically, affordably, and built to last beyond the engagement.</p>
+      <div class="btn-row">
+        <a class="btn btn-primary" href="/contact/">Start a conversation</a>
+        <a class="btn btn-ghost" href="/services/">See our services</a>
+      </div>
+    </div>
+    <div class="scroll-cue" aria-hidden="true">Scroll<span></span></div>
+  </section>
+
+  <section class="block">
+    <div class="wrap split">
+      <div class="prose">
+        <p class="eyebrow">Why this matters now</p>
+        <h2>Helping companies take charge of their ESG journey</h2>
+        <p>The ESG landscape is becoming more demanding, with escalating pressures from public and private actors across every sector. The focus has long sat on large, listed organisations — but it is widening to take in new sectors, new geographies, and smaller enterprises being pulled into scope through regulation, or through requests cascading down from larger partners.</p>
+        <p><a href="/about/">Learn more about our approach →</a></p>
+      </div>
+      <div class="prose">
+        <p class="eyebrow">The case for acting early</p>
+        <h2>Why care about ESG?</h2>
+        <p>Your business may not be touched by today's laws or consumer expectations — but it is likely they will reach you over the coming years. Strong practice brings a stronger brand, better talent attraction and retention, sharper risk management, and access to a wider pool of capital: benefits that tend to outweigh the resources invested to reach them.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="stitch" aria-hidden="true"><svg viewBox="0 0 1200 14" preserveAspectRatio="none"><line x1="0" y1="7" x2="1200" y2="7" stroke="currentColor" stroke-width="2" stroke-dasharray="14 9" stroke-linecap="round"/></svg></div>
+
+  <section class="block">
+    <div class="wrap">
+      <p class="eyebrow">What we do</p>
+      <h2 style="margin-bottom:1.6rem">Our services</h2>
+      <div class="grid">
+        <article class="card"><span class="num">01</span><h3>Carbon Accounting</h3><p>A comprehensive, easy-to-navigate emissions template, tailored to your business and aligned to international standards.</p></article>
+        <article class="card"><span class="num">02</span><h3>Net Zero Targets</h3><p>Set actionable, commercially viable, science-aligned targets to reduce the emissions you've quantified.</p></article>
+        <article class="card"><span class="num">03</span><h3>Supplier Management</h3><p>From ESG due diligence to engagement, manage your supply chain to surface risks and seize opportunities.</p></article>
+        <article class="card"><span class="num">04</span><h3>ESG Policies</h3><p>Establish and update policies that demonstrate transparent operations and promote responsible action.</p></article>
+        <article class="card"><span class="num">05</span><h3>Reporting &amp; Disclosure</h3><p>Meet regulatory and voluntary standards while generating insights that sharpen internal decisions.</p></article>
+        <article class="card"><span class="num">06</span><h3>ESG Training</h3><p>Upskill your team, junior to C-suite, building lasting internal capacity through bespoke training.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" style="padding-top:0">
+    <div class="wrap">
+      <div class="cta-band">
+        <h2>Ready to start your ESG journey?</h2>
+        <p>Tell us about your organisation and we'll show you a practical, proportionate first step.</p>
+        <p style="margin-top:1.6rem;margin-bottom:0"><a class="btn btn-primary" href="/contact/">Get in touch</a></p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <a class="brand" href="/"><svg class="brand-mark" viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M4 9c5 4 19 4 24 0M4 16c5 4 19 4 24 0M4 23c5 4 19 4 24 0" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="16" cy="16" r="2.4" fill="currentColor"/></svg> ESG&nbsp;Thread</a>
+    <nav aria-label="Footer"><ul><li><a href="/">Home</a></li><li><a href="/about/">About</a></li><li><a href="/services/">Services</a></li><li><a href="/insights/">Insights</a></li><li><a href="/contact/">Contact</a></li></ul></nav>
+    <div class="foot-legal"><span>© 2026 ESG Thread</span><a href="/privacy/">Privacy Policy</a></div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+(function(){
+  var canvas = document.getElementById('scene');
+  var REDUCED = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // --- mobile nav ---
+  var tg = document.querySelector('.nav-toggle'), nv = document.getElementById('nav');
+  if(tg && nv){ tg.addEventListener('click',function(){var o=nv.getAttribute('data-open')==='true';nv.setAttribute('data-open',String(!o));tg.setAttribute('aria-expanded',String(!o));}); }
+
+  // --- WebGL guard ---
+  var renderer;
+  try { renderer = new THREE.WebGLRenderer({canvas:canvas, antialias:true, alpha:true}); }
+  catch(e){ canvas.style.display='none'; return; }  // CSS gradient hero remains
+
+  var ROOT = document.querySelector('.hero');
+  var W = ROOT.clientWidth, H = ROOT.clientHeight;
+  renderer.setSize(W, H, false);
+  renderer.setPixelRatio(Math.min(1.75, window.devicePixelRatio || 1));
+
+  var BG = new THREE.Color(0x0d1c17);
+  var scene = new THREE.Scene();
+  scene.fog = new THREE.Fog(0x0d1c17, 7.5, 17.5);
+
+  var camera = new THREE.PerspectiveCamera(46, W/H, 0.1, 100);
+  camera.position.set(0.0, 4.4, 8.6);
+  camera.lookAt(0, -0.35, -1.5);
+
+  // --- terrain field extent ---
+  var X0 = -9.5, X1 = 9.5, Z0 = -7.5, Z1 = 5.0;
+  var small = Math.min(W, H) < 640;
+  var COLS = small ? 78 : 116;   // along X
+  var ROWS = small ? 54 : 80;    // along Z
+
+  // terrain height — must match the JS version used by the needle below
+  // (kept in GLSL for the field so displacement runs on the GPU)
+  var terrainGLSL = [
+    'float terrain(vec2 p, float t){',
+    '  float h = 0.0;',
+    '  h += 1.00 * sin(p.x*0.55 + t*0.22) * cos(p.y*0.42 - t*0.18);',
+    '  h += 0.55 * sin(p.x*1.05 - p.y*0.75 + t*0.35);',
+    '  h += 0.30 * cos(p.x*1.70 + p.y*1.25 + t*0.12);',
+    '  h += 0.85 * sin(p.x*0.22) * cos(p.y*0.19);',
+    '  return h;',
+    '}'
+  ].join('\n');
+  function terrainJS(x, z, t){
+    var h = 0.0;
+    h += 1.00 * Math.sin(x*0.55 + t*0.22) * Math.cos(z*0.42 - t*0.18);
+    h += 0.55 * Math.sin(x*1.05 - z*0.75 + t*0.35);
+    h += 0.30 * Math.cos(x*1.70 + z*1.25 + t*0.12);
+    h += 0.85 * Math.sin(x*0.22) * Math.cos(z*0.19);
+    return h;
+  }
+
+  // --- build woven warp + weft line segments ---
+  var positions = [], reveals = [], types = []; // type 0 = warp(along X), 1 = weft(along Z)
+  function nx(i,n){ return X0 + (X1-X0)*(i/(n-1)); }
+  function nz(j,n){ return Z0 + (Z1-Z0)*(j/(n-1)); }
+  function revealOf(x){ return (x - X0)/(X1 - X0); } // 0..1 left→right
+
+  // warp: for each row, segments across columns
+  for(var j=0;j<ROWS;j++){
+    var z = nz(j,ROWS);
+    for(var i=0;i<COLS-1;i++){
+      var xa=nx(i,COLS), xb=nx(i+1,COLS);
+      positions.push(xa,0,z, xb,0,z);
+      reveals.push(revealOf(xa), revealOf(xb));
+      types.push(0,0);
+    }
+  }
+  // weft: for each column, segments down rows
+  for(var i2=0;i2<COLS;i2++){
+    var x=nx(i2,COLS);
+    for(var j2=0;j2<ROWS-1;j2++){
+      var za=nz(j2,ROWS), zb=nz(j2+1,ROWS);
+      positions.push(x,0,za, x,0,zb);
+      reveals.push(revealOf(x), revealOf(x));
+      types.push(1,1);
+    }
+  }
+
+  var geo = new THREE.BufferGeometry();
+  geo.setAttribute('position', new THREE.Float32BufferAttribute(positions, 3));
+  geo.setAttribute('aReveal', new THREE.Float32BufferAttribute(reveals, 1));
+  geo.setAttribute('aType', new THREE.Float32BufferAttribute(types, 1));
+
+  var uniforms = {
+    uTime:   { value: 0 },
+    uReveal: { value: REDUCED ? 2.0 : -0.1 },
+    uAmp:    { value: 1.0 },
+    uFog:    { value: new THREE.Color(0x0d1c17) },
+    uFogNear:{ value: 7.5 },
+    uFogFar: { value: 17.5 },
+    uSage:   { value: new THREE.Color(0x4f7c66) },
+    uCopper: { value: new THREE.Color(0xcf8a3f) },
+    uFront:  { value: new THREE.Color(0xffc27a) },
+    uMouse:   { value: new THREE.Vector2(0, -999) }, // (worldX, worldZ) of cursor on cloth
+    uMouseStr:{ value: 0 },                          // eased 0..1 presence
+    uMouseR:  { value: 2.7 },                         // bump radius
+    uBump:    { value: 1.15 }                         // bump height
+  };
+
+  var mat = new THREE.ShaderMaterial({
+    uniforms: uniforms,
+    transparent: true,
+    depthWrite: false,
+    blending: THREE.AdditiveBlending,
+    vertexShader: [
+      'attribute float aReveal;',
+      'attribute float aType;',
+      'uniform float uTime; uniform float uAmp;',
+      'uniform float uFogNear; uniform float uFogFar;',
+      'uniform vec2 uMouse; uniform float uMouseStr; uniform float uMouseR; uniform float uBump;',
+      'varying float vReveal; varying float vHeight; varying float vType; varying float vFog; varying float vInfl;',
+      terrainGLSL,
+      'void main(){',
+      '  vec3 p = position;',
+      '  float h = terrain(p.xz, uTime) * uAmp;',
+      '  float d = distance(p.xz, uMouse);',
+      '  float infl = exp(-(d*d)/(uMouseR*uMouseR));',   // soft gaussian under cursor
+      '  h += infl * uMouseStr * uBump;',
+      '  p.y = h;',
+      '  vReveal = aReveal; vHeight = h; vType = aType; vInfl = infl * uMouseStr;',
+      '  vec4 mv = modelViewMatrix * vec4(p, 1.0);',
+      '  vFog = smoothstep(uFogNear, uFogFar, -mv.z);',
+      '  gl_Position = projectionMatrix * mv;',
+      '}'
+    ].join('\n'),
+    fragmentShader: [
+      'precision highp float;',
+      'uniform float uReveal;',
+      'uniform vec3 uSage; uniform vec3 uCopper; uniform vec3 uFront;',
+      'varying float vReveal; varying float vHeight; varying float vType; varying float vFog; varying float vInfl;',
+      'void main(){',
+      '  float hf = smoothstep(-1.4, 2.0, vHeight);',         // peaks → copper
+      '  vec3 col = mix(uSage, uCopper, hf);',
+      '  col = mix(col, col*0.78, vType*0.5);',               // weft a touch deeper
+      '  float a = 1.0 - smoothstep(uReveal, uReveal+0.06, vReveal);', // reveal sweep
+      '  float front = smoothstep(0.09, 0.0, abs(vReveal - uReveal));', // glowing weave front
+      '  col += uFront * front * 0.9;',
+      '  col += uFront * vInfl * 0.8;',                        // threads glow where the cursor touches
+      '  a = clamp(a + front*0.6 + vInfl*0.5, 0.0, 1.0);',
+      '  float vis = a * (1.0 - vFog);',
+      '  col *= 0.62 + 0.5*hf;',                              // ridges glow a bit more
+      '  gl_FragColor = vec4(col * vis, 1.0);',               // additive → fades to bg cleanly
+      '}'
+    ].join('\n')
+  });
+
+  var weave = new THREE.LineSegments(geo, mat);
+  scene.add(weave);
+
+  // --- the running needle: a bright copper thread tracing the cloth, with a trail + glowing tip ---
+  var TRAIL = 90;
+  var tgeo = new THREE.BufferGeometry();
+  var tpos = new Float32Array(TRAIL*3);
+  tgeo.setAttribute('position', new THREE.BufferAttribute(tpos, 3));
+  var tmat = new THREE.LineBasicMaterial({ color:0xffc88f, transparent:true, opacity:0.9, blending:THREE.AdditiveBlending, depthWrite:false });
+  var needle = new THREE.Line(tgeo, tmat);
+  scene.add(needle);
+
+  // glowing tip sprite
+  function glowTex(){
+    var c=document.createElement('canvas'); c.width=c.height=64; var g=c.getContext('2d');
+    var rg=g.createRadialGradient(32,32,0,32,32,32);
+    rg.addColorStop(0,'rgba(255,224,170,1)'); rg.addColorStop(0.3,'rgba(223,167,103,0.7)'); rg.addColorStop(1,'rgba(223,167,103,0)');
+    g.fillStyle=rg; g.fillRect(0,0,64,64); return new THREE.CanvasTexture(c);
+  }
+  var tip = new THREE.Sprite(new THREE.SpriteMaterial({ map:glowTex(), color:0xffffff, transparent:true, blending:THREE.AdditiveBlending, depthWrite:false }));
+  tip.scale.set(0.7,0.7,0.7); scene.add(tip);
+
+  function needlePos(t){
+    var x = Math.sin(t*0.23) * 8.2;
+    var z = Math.sin(t*0.16 + 1.3) * 3.4 - 1.4;
+    var y = terrainJS(x, z, t) + 0.06;
+    return [x, y, z];
+  }
+  // seed the trail
+  (function(){ var p=needlePos(0); for(var k=0;k<TRAIL;k++){ tpos[k*3]=p[0];tpos[k*3+1]=p[1];tpos[k*3+2]=p[2]; } })();
+
+  // --- loop ---
+  var clock = new THREE.Clock();
+  var revealDone = REDUCED;
+  var running = true;
+
+  function resize(){
+    W = ROOT.clientWidth; H = ROOT.clientHeight;
+    renderer.setSize(W, H, false);
+    camera.aspect = W/H; camera.updateProjectionMatrix();
+  }
+  window.addEventListener('resize', resize);
+  document.addEventListener('visibilitychange', function(){
+    running = !document.hidden;
+    if(running){ clock.getDelta(); animate(); }
+  });
+
+  // --- pointer interaction: the cursor lifts and lights the cloth ---
+  var ray = new THREE.Raycaster();
+  var plane = new THREE.Plane(new THREE.Vector3(0,1,0), 0);
+  var ndc = new THREE.Vector2();
+  var hitPt = new THREE.Vector3();
+  var mTX = 0, mTZ = -999, mStrT = 0;             // cursor targets (worldX, worldZ, strength)
+  var parX = 0, parY = 0, parTX = 0, parTY = 0;   // parallax current + target
+
+  function onPointer(e){
+    var r = ROOT.getBoundingClientRect();
+    var nx = ((e.clientX - r.left)/r.width)*2 - 1;
+    var ny = -(((e.clientY - r.top)/r.height)*2 - 1);
+    ndc.set(nx, ny);
+    ray.setFromCamera(ndc, camera);
+    if(ray.ray.intersectPlane(plane, hitPt)){ mTX = hitPt.x; mTZ = hitPt.z; mStrT = 1.0; }
+    parTX = nx; parTY = ny;
+  }
+  function offPointer(){ mStrT = 0.0; parTX = 0; parTY = 0; }
+  if(!REDUCED){
+    ROOT.addEventListener('pointermove', onPointer, {passive:true});
+    ROOT.addEventListener('pointerleave', offPointer, {passive:true});
+  }
+
+  function frame(t){
+    uniforms.uTime.value = t;
+
+    // camera drift + cursor parallax
+    if(!REDUCED){
+      camera.position.x = Math.sin(t*0.10) * 0.9 + parX * 0.9;
+      camera.position.y = 4.4 + Math.sin(t*0.13) * 0.18 - parY * 0.45;
+      camera.lookAt(Math.sin(t*0.05)*0.4 + parX*0.5, -0.35 + parY*0.18, -1.5);
+    }
+
+    // needle trail
+    for(var k=TRAIL-1;k>0;k--){
+      tpos[k*3]=tpos[(k-1)*3]; tpos[k*3+1]=tpos[(k-1)*3+1]; tpos[k*3+2]=tpos[(k-1)*3+2];
+    }
+    var p = needlePos(t);
+    tpos[0]=p[0]; tpos[1]=p[1]; tpos[2]=p[2];
+    tgeo.attributes.position.needsUpdate = true;
+    tip.position.set(p[0],p[1],p[2]);
+    var pulse = 0.6 + 0.18*Math.sin(t*6.0);
+    tip.scale.set(pulse,pulse,pulse);
+
+    renderer.render(scene, camera);
+  }
+
+  var elapsed = 0;
+  function animate(){
+    if(!running) return;
+    requestAnimationFrame(animate);
+    var dt = Math.min(clock.getDelta(), 0.05);
+    elapsed += dt;
+    if(!revealDone){
+      uniforms.uReveal.value += dt * 0.33;      // sweep speed
+      if(uniforms.uReveal.value >= 1.12){ uniforms.uReveal.value = 2.0; revealDone = true; }
+    }
+    // ease cursor bump + parallax toward their targets
+    uniforms.uMouseStr.value += (mStrT - uniforms.uMouseStr.value) * 0.07;
+    uniforms.uMouse.value.x  += (mTX - uniforms.uMouse.value.x) * 0.12;
+    uniforms.uMouse.value.y  += (mTZ - uniforms.uMouse.value.y) * 0.12;
+    parX += (parTX - parX) * 0.05;
+    parY += (parTY - parY) * 0.05;
+    frame(REDUCED ? 6.0 : elapsed);
+  }
+
+  // first paint
+  resize();
+  if(REDUCED){ frame(6.0); }      // static, fully formed
+  else { clock.start(); animate(); }
+})();
+</script>
+</body>
+</html>
